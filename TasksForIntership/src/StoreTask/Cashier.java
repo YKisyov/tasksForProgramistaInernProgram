@@ -17,28 +17,22 @@ public class Cashier {
         Appliance item04 = new Appliance("laptop", "BrandL", 2345.d,
                 "ModelL", LocalDate.parse("2021-03-03"), 1.125d);
 
-        Purchase purchase01 = new Purchase(item01, 2.45d);
-        Purchase purchase02 = new Purchase(item02, 3.d);
-        Purchase purchase03 = new Purchase(item03, 2.d);
-        Purchase purchase04 = new Purchase(item04, 1.d);
+        Cart cart01 = new Cart(item01, 2.45d);
+        Cart cart02 = new Cart(item02, 3.d);
+        Cart cart03 = new Cart(item03, 2.d);
+        Cart cart04 = new Cart(item04, 1.d);
 
-        List<Purchase> cart = new ArrayList<>();
-        cart.add(purchase01);
-        cart.add(purchase02);
-        cart.add(purchase03);
-        cart.add(purchase04);
+        List<Cart> cart = new ArrayList<>();
+        cart.add(cart01);
+        cart.add(cart02);
+        cart.add(cart03);
+        cart.add(cart04);
 
         printReceipt(cart, LocalDateTime.parse("2021-06-14T12:34:56"));
 
     }
 
-    private static void printOutNLines(int n) {
-        for (int i = 0; i < n; i++) {
-            System.out.println();
-        }
-    }
-
-    public static void printReceipt(List<Purchase> cart, LocalDateTime purchaseDate) {
+    public static void printReceipt(List<Cart> cart, LocalDateTime purchaseDate) {
         //TODO show the date displayed on the cart/receipt:
 
         double subtotal = 0.d;
@@ -46,7 +40,7 @@ public class Cashier {
         System.out.printf("Date: %s %s\n", purchaseDate.toLocalDate(), purchaseDate.toLocalTime());
 
         System.out.println("---Products---");
-        for (Purchase purchase : cart) {
+        for (Cart purchase : cart) {
             System.out.println();
             System.out.println(purchase.getItem().showOnReceipt());
             // Add two empty lines:
@@ -63,13 +57,13 @@ public class Cashier {
              * */
             if (purchase.getItem() instanceof Perishable) {
                 //Check to see if discount is applicable for this purchase
-                if (((Perishable) purchase.getItem()).daysUntilExpiration() <= 1) {
+                if (((Perishable) purchase.getItem()).daysUntilExpiration(purchaseDate.toLocalDate()) <= 1) {
                     //Apply a 50 % discount:
                     double currentDiscount = purchase.getItem().getPrice() * purchase.getQuantity() * 0.5d;
                     totalDiscounts += currentDiscount;
                     //print out the discount:
                     System.out.printf("#discount 50%%  -$%.2f\n", currentDiscount);
-                } else if (((Perishable) purchase.getItem()).daysUntilExpiration() <= 5) {
+                } else if (((Perishable) purchase.getItem()).daysUntilExpiration(purchaseDate.toLocalDate()) <= 5) {
                     //Apply a 10 % discount:
                     double currentDiscount = purchase.getItem().getPrice() * purchase.getQuantity() * 0.1d;
                     totalDiscounts += currentDiscount;

@@ -1,8 +1,8 @@
 package StoreTask;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public interface Perishable {
     //Returns the remaining expiration time in days;
-    int daysUntilExpiration();
+    int daysUntilExpiration(LocalDate purchaseDate);
 }

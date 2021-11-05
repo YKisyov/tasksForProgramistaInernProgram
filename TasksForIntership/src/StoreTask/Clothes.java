@@ -1,8 +1,8 @@
 package StoreTask;
 
-public class Clothes extends Product{
-   private final ClothesSize size;
-   protected final String color;
+public class Clothes extends Product {
+    private final ClothesSize size;
+    protected final String color;
 
     public Clothes(String name, String brand, double price, ClothesSize size, String color) {
         super(name, brand, price);

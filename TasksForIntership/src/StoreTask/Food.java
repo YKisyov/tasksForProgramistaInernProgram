@@ -3,7 +3,7 @@ package StoreTask;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class Food extends Product implements Perishable{
+public class Food extends Product implements Perishable {
 
     private final LocalDate expDate;
 
@@ -13,8 +13,8 @@ public class Food extends Product implements Perishable{
     }
 
     @Override
-    public int daysUntilExpiration() {
-        return (int) expDate.until(LocalDate.now(), ChronoUnit.DAYS) ;
+    public int daysUntilExpiration(LocalDate purchaseDate) {
+        return (int) expDate.until(purchaseDate, ChronoUnit.DAYS);
     }
 
     @Override

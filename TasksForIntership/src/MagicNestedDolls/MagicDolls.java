@@ -1,25 +1,25 @@
 package MagicNestedDolls;
 
 public class MagicDolls {
-    int getLastNestingDoll (int[] nestingDollsElements) {
+    int getLastNestingDoll(int[] nestingDollsElements) {
         // sample data for preview and think over purposes: {-1, 1, 2, 3, 5, 5, 3, 7};
 
         int nightsCounter = 1; // Used to determine whether a night is odd or even
-        while (nestingDollsElements.length > 1){
+        while (nestingDollsElements.length > 1) {
             //Logical action here
             int[] tmpArray = new int[nestingDollsElements.length / 2];
-            if (nightsCounter % 2 != 0){
+            if (nightsCounter % 2 != 0) {
                 //This is an odd night, so we have to sum the consecutive dolls:
-                for (int i = 0; i < tmpArray.length;) {
-                    for (int j = 0; j < nestingDollsElements.length; j+=2) {
-                        tmpArray[i++] = nestingDollsElements[j] + nestingDollsElements[j+1];
+                for (int i = 0; i < tmpArray.length; ) {
+                    for (int j = 0; j < nestingDollsElements.length; j += 2) {
+                        tmpArray[i++] = nestingDollsElements[j] + nestingDollsElements[j + 1];
                     }
                 }
             } else {
                 //This is an EVEN night, so we have to multiply the consecutive dolls content:
                 for (int i = 0; i < tmpArray.length; i++) {
-                    for (int j = 0; j < nestingDollsElements.length; j+=2) {
-                        tmpArray[i++] = nestingDollsElements[j] * nestingDollsElements[j+1];
+                    for (int j = 0; j < nestingDollsElements.length; j += 2) {
+                        tmpArray[i++] = nestingDollsElements[j] * nestingDollsElements[j + 1];
                     }
                 }
             }
