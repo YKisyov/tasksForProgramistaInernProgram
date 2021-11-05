@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81bc928a-43b2-4e85-bf9a-f258f542ce5d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/StoreTask.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/MagicDolls/MagicDolls.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/MagicDolls/MagicNestingDolls.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/Appliance.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/Beverage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/Cashier.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/Clothes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/ClothesSize.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/Food.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/Perishable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/out/production/StoreTask/StoreTask/Purchase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/MagicNestedDolls/MagicDolls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/MagicNestedDolls/MagicNestingDolls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Appliance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Beverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Cashier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Clothes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/ClothesSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Perishable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Purchase.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20VntDZDSGEWfxxZdH1S00vytT8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81bc928a-43b2-4e85-bf9a-f258f542ce5d" name="Changes" comment="" />
+      <created>1636138838751</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636138838751</updated>
+      <workItem from="1636138842682" duration="1893000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
