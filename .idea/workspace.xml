@@ -1,26 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81bc928a-43b2-4e85-bf9a-f258f542ce5d" name="Changes" comment="Uploading Initial version">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="81bc928a-43b2-4e85-bf9a-f258f542ce5d" name="Changes" comment="Code clean up and optimization.">
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/DiscountCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/DiscountMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Discountable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TasksForIntership/src/MagicNestedDolls/MagicDolls.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/MagicNestedDolls/MagicDolls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TasksForIntership/src/MagicNestedDolls/MagicNestingDolls.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/MagicNestedDolls/MagicNestingDolls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Appliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Appliance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Beverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Beverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/ProductsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Cashier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Clothes.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Clothes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Perishable.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Perishable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/TasksForIntership/src/StoreTask/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="cca45812-f55e-415c-8ed3-aaa17c7bf6e5" />
+        <option name="url" value="https://github.com/YKisyov/tasksForProgramistaInernProgram" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="20VntDZDSGEWfxxZdH1S00vytT8" />
   <component name="ProjectViewState">
@@ -30,6 +59,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -37,7 +67,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="StoreTask" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Cashier">
     <configuration name="Cashier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StoreTask.Cashier" />
       <module name="StoreTask" />
@@ -51,9 +86,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MagicNestedDolls.Test" />
+      <module name="StoreTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MagicNestedDolls.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Cashier" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -68,7 +117,7 @@
       <workItem from="1636138842682" duration="2845000" />
       <workItem from="1636141751023" duration="2029000" />
       <workItem from="1636143848707" duration="140000" />
-      <workItem from="1636144081724" duration="2660000" />
+      <workItem from="1636144081724" duration="34391000" />
     </task>
     <task id="LOCAL-00001" summary="Uploading Initial version">
       <created>1636140943196</created>
@@ -84,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636141122695</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Code clean up and optimization.">
+      <created>1636147338579</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636147338579</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,7 +151,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -104,6 +172,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Uploading Initial version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Uploading Initial version" />
+    <MESSAGE value="Code clean up and optimization." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code clean up and optimization." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TasksForIntership/src/StoreTask/Cashier.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TasksForIntership/src/StoreTask/Beverage.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
