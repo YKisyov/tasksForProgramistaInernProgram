@@ -1,6 +1,5 @@
 package StoreTask;
 
-import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -17,44 +16,59 @@ public class Cashier {
         Appliance item04 = new Appliance("laptop", "BrandL", 2345.d,
                 "ModelL", LocalDate.parse("2021-03-03"), 1.125d);
 
-        Cart cart01 = new Cart(item01, 2.45d);
-        Cart cart02 = new Cart(item02, 3.d);
-        Cart cart03 = new Cart(item03, 2.d);
-        Cart cart04 = new Cart(item04, 1.d);
 
-        List<Cart> cart = new ArrayList<>();
-        cart.add(cart01);
-        cart.add(cart02);
-        cart.add(cart03);
-        cart.add(cart04);
+        ProductsList productsList01 = new ProductsList(item01, 2.45d);
+        ProductsList productsList02 = new ProductsList(item02, 3.d);
+        ProductsList productsList03 = new ProductsList(item03, 2.d);
+        ProductsList productsList04 = new ProductsList(item04, 1.d);
+
+        List<ProductsList> cart = new ArrayList<>();
+        cart.add(productsList01);
+        cart.add(productsList02);
+        cart.add(productsList03);
+        cart.add(productsList04);
 
         printReceipt(cart, LocalDateTime.parse("2021-06-14T12:34:56"));
 
     }
 
-    public static void printReceipt(List<Cart> cart, LocalDateTime purchaseDate) {
-        //TODO show the date displayed on the cart/receipt:
+    public static void printReceipt(List<ProductsList> cart, LocalDateTime purchaseDate) {
 
         double subtotal = 0.d;
         double totalDiscounts = 0.d;
+
         System.out.printf("Date: %s %s\n", purchaseDate.toLocalDate(), purchaseDate.toLocalTime());
-
         System.out.println("---Products---");
-        for (Cart purchase : cart) {
-            System.out.println();
-            System.out.println(purchase.getItem().showOnReceipt());
-            // Add two empty lines:
-            System.out.printf("%.2f x $%.2f = $%.2f\n",
-                    purchase.getQuantity(), purchase.getItem().getPrice(),
-                    purchase.getQuantity() * purchase.getItem().getPrice());
 
-            subtotal += purchase.getItem().getPrice();
+        //Init the discount calculator (visitor pattern):
+        DiscountCalculator discountMaker = new DiscountCalculator(purchaseDate.toLocalDate());
+
+        for (ProductsList productsList : cart) {
+            System.out.println();
+            System.out.println(productsList.getItem().showOnReceipt());
+
+            System.out.printf("%.2f x $%.2f = $%.2f\n",
+                    productsList.getQuantity(), productsList.getItem().getPrice(),
+                    productsList.getQuantity() * productsList.getItem().getPrice());
+
+            subtotal += productsList.getItem().getPrice() * productsList.getQuantity();
 
             /*
-             * Checking for discounts.
-             *
-             *
-             * */
+             * Checking for discounts via the visitor pattern;
+             */
+            double currentApplicableDiscount = productsList.getItem().accept(discountMaker, productsList.getQuantity());
+            if (currentApplicableDiscount > 0.d){
+                //Add the currentApplicableDiscount to the total discounts:
+                totalDiscounts += currentApplicableDiscount;
+                //Print out the line showing the applied discount;
+                System.out.println(discountMaker.getDiscountTextToDisplay());
+            }
+
+
+
+
+            /*
+            Old code:
             if (purchase.getItem() instanceof Perishable) {
                 //Check to see if discount is applicable for this purchase
                 if (((Perishable) purchase.getItem()).daysUntilExpiration(purchaseDate.toLocalDate()) <= 1) {
@@ -90,7 +104,7 @@ public class Cashier {
                     //print out the discount:
                     System.out.printf("#discount 5%%  -$%.2f\n", currentDiscount);
                 }
-            }
+            }*/
         }
         System.out.println("-----------------------------------------------------------------------------------");
         System.out.printf("SUBTOTAL: $%.2f\n" +

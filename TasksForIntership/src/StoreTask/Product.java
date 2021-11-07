@@ -1,6 +1,6 @@
 package StoreTask;
 
-public abstract class Product {
+public abstract class Product implements Discountable {
     private final String name;
     private final String brand;
     private final double price;

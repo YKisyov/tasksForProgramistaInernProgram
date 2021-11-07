@@ -32,4 +32,9 @@ public class Appliance extends Product {
         //Generates only the fist line that has to be shown on the receipt;
         return this.getName() + " - " + this.getBrand();
     }
+
+    @Override
+    public double accept(DiscountMaker discountMaker, double productQuantity) {
+        return discountMaker.visit(this, productQuantity);
+    }
 }
